@@ -1,0 +1,24 @@
+
+
+		.front{
+			position:absolute;
+			transition: transform 1.5s;
+		}
+
+		.back {
+			backface-visibility:hidden;
+			transform: rotateY(180deg);
+			transition: transform 1.5s;
+		}
+
+		.portfolio-item:hover > .back{
+			transition: transform 1.5s;
+			transform: rotateY(0deg);
+			
+		}
+
+		.portfolio-item:hover > .front{
+			transition: transform 1.5s;
+			transform: rotateY(180deg);
+		}
+
